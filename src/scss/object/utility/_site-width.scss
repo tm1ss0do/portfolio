@@ -1,0 +1,6 @@
+.site-width{
+  width:80%;
+  @include iphone6{
+    width:100%;
+  }
+}

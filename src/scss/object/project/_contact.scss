@@ -1,0 +1,15 @@
+.p-contact{
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 200px;
+  &__twitter-icon{
+    font-size: $font-xl;
+    &:hover{
+      color: $c-twitter;
+    }
+  }
+}
+.p-contact-wrapper{
+  flex-direction: column;
+}

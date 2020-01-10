@@ -1,0 +1,38 @@
+.p-header{
+  width: 80%;
+  @include iphone6{
+    width: 100%;
+  }
+  &__title{
+    width: 20%;
+    padding: $span-ss;
+    @include iphone6{
+      width: 50%;
+    }
+  }
+  &__menu{
+    justify-content: flex-end;
+    width: 80%;
+
+  }
+  &__menu-item{
+    font-size: $font-m;
+    @include iphone6{
+      font-size: $font-s;
+    }
+    &:hover{
+      background: $c-main;
+      cursor: pointer;
+      transition: .5s;
+    }
+  }
+  &__item-link{
+    padding: $span-s $span-l;
+    display: block;
+  }
+  & ul{
+    @include iphone6{
+      display: none;
+    }
+  }
+}

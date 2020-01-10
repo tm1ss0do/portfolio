@@ -1,0 +1,31 @@
+.c-hero{
+  width: 100%;
+  height: 700px;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: center;
+  background: $c-main;
+  &__title-item{
+    padding-right: $span-s;
+    font-size: $font-xxl;
+    &:last-child{
+      padding-right: none;
+    }
+    &:nth-child(even){
+      animation: topIn 2s ease .3s;
+    }
+    &:nth-child(odd){
+      animation: bottomIn 2s ease .3s;
+    }
+  }
+}
+
+@-webkit-keyframes topIn {
+  0% {margin-top: -200px; opacity:0;}
+100% {margin-top: 0px; opacity:1;}
+}
+
+@-webkit-keyframes bottomIn {
+  0% {margin-top: 200px; opacity:0;}
+100% {margin-top: 0px; opacity:1;}
+}

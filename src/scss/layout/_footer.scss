@@ -1,0 +1,11 @@
+#footer{
+  height: 50px;
+  background: #eee;
+  text-align: center;
+  line-height: 50px;
+
+  @include iphone6{
+    font-size: $font-s;
+  }
+
+}

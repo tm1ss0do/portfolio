@@ -1,0 +1,109 @@
+// ==========================================================================
+// 変数
+// ==========================================================================
+
+//-----------
+//span
+//-----------
+$span-ss: 10px;
+$span-s: 20px;
+$span-m: 30px;
+$span-l: 40px;
+$span-ll: 50px;
+$span-xl: 80px;
+$span-xxl: 90px;
+
+//-----------
+//フォントサイズ
+//-----------
+$font-s: 14px;
+$font-m: 17px;
+$font-l: 20px;
+$font-ll: 24px;
+$font-xl: 32px;
+$font-xxl: 42px;
+
+//-----------
+//font-family
+//-----------
+//$f-s-title: 'Kosugi', sans-serif;
+$f-base: 'Noto Sans JP','Sawarabi Gothic',sans-serif;
+$f-s-title: 'M PLUS Rounded 1c',sans-serif;
+
+//-----------
+//カラー
+//-----------
+$c-main: #99cc8f; //green
+$c-sub: #ffd280; //orange
+$c-sub2: #e6a1b8; //pink
+$c-sub4: #fff7b3; //yellow
+
+$c-font: #1a1912;
+$c-font-sub: #808080;
+
+
+$c-back-main: #fff;
+$c-back-sub: #eee;
+$c-back-sub-opa: rgba(238, 238, 238,0.5);
+
+$c-twitter: #00acee; //twitter
+$c-blog: #fff7b3;
+
+//========================
+//レスポンシブ
+//========================
+@mixin iphone6($max-width:400px) {
+ @media screen and (max-width: $max-width){
+  @content;
+ }
+}
+
+
+
+// ==========================================================================
+// Foundation
+// ==========================================================================
+
+@import "foundation/_base";
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+@import "layout/_footer";
+@import "layout/_header";
+@import "layout/_main";
+
+// ==========================================================================
+// Object
+// ==========================================================================
+
+// -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------
+
+@import "object/component/_hero";
+@import "object/component/_skill";
+@import "object/component/_title";
+@import "object/component/_work";
+
+// -----------------------------------------------------------------
+// Project
+// -----------------------------------------------------------------
+
+@import "object/project/_header";
+@import "object/project/_prof-summary";
+@import "object/project/_profile";
+@import "object/project/_skill";
+@import "object/project/_work";
+@import "object/project/_contact";
+
+// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------
+@import "object/utility/_flex";
+@import "object/utility/_site-width";
+@import "object/utility/_disappear";
+@import "object/utility/_appear";
+@import "object/utility/_background-color";
+@import "object/utility/_mypic-move";

@@ -1,0 +1,25 @@
+
+/**
+ * Media
+ */
+ .c-title{
+   justify-content: center;
+   padding: 50px;
+   font-family: $f-s-title;
+   &__text{
+     padding: 0 $span-s;
+     font-size: $font-xxl;
+     @include iphone6{
+        font-size: $font-xl;
+     }
+   }
+   &::before{
+     content: '';
+     border-bottom: 3px solid black;
+     width: 10%;
+     margin-bottom: 25px;
+   }
+   &::after{
+     @extend .c-title::before;
+   }
+ }

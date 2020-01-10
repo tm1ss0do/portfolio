@@ -1,0 +1,68 @@
+.c-work{
+  justify-content: space-around;
+  margin-bottom: $span-ll;
+  @include iphone6{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  &__wrap{
+    width: 30%;
+    max-height: 450px;
+    background: $c-back-sub;
+    padding: $span-s;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    @include iphone6{
+      width: 100%;
+    }
+  }
+  &__new-imgbox{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    margin-top: -$span-xl;
+    margin-left: -$span-s;
+  }
+  &__new-img{
+    width: 100%;
+  }
+  &__imgbox{
+    max-height: 200px;
+    overflow: hidden;
+  }
+  &__img{
+    width: 100%;
+  }
+  &__create-date{
+    font-size: $font-m;
+    color: $c-font-sub;
+  }
+  &__skill{
+    min-height: 10%;
+  }
+  &__use-skill{
+    background: #fff;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 $span-ss;
+    border-radius: 3px;
+  }
+  &__summary{
+    font-size: $font-s;
+    & .icon{
+      font-size: $font-m;
+    }
+  }
+  &__summary-text{
+    background: #fff;
+    height: 100px;
+    padding: $span-ss;
+    border-radius: 3px;
+  }
+  &__summary-link{
+    &:hover{
+      color: $c-main;
+    }
+  }
+}

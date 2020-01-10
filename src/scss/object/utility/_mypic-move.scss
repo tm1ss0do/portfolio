@@ -1,0 +1,41 @@
+.mypic-move{
+  animation: undefined-easeOutElastic 2s ease 0s;
+}
+.mupic-stop{
+  animation: none;
+}
+
+@keyframes undefined-easeOutElastic {
+	0% {
+		transform: translateY(100%);
+	}
+
+	16% {
+		transform: translateY(-32.27%);
+	}
+
+	28% {
+		transform: translateY(14.88%);
+	}
+
+	44% {
+		transform: translateY(-4.63%);
+	}
+
+	59% {
+		transform: translateY(2.36%);
+	}
+
+	73% {
+		transform: translateY(0.58%);
+	}
+
+	88% {
+		transform: translateY(1.8%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+
+}

@@ -1,0 +1,10 @@
+.p-work{
+  justify-content: center;
+  &__contents-wrap{
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.p-work-wrapper{
+  flex-direction: column;
+}

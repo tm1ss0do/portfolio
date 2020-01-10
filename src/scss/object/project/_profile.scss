@@ -1,0 +1,11 @@
+.p-profile{
+  justify-content: center;
+  padding: $span-xl 0;
+  @include iphone6{
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+}
+.p-profile-wrap{
+  flex-direction: column;
+}
