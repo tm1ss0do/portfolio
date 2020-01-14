@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="dist/css/reset.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kosugi|M+PLUS+Rounded+1c|Noto+Sans+JP|Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="node_modules/aos/dist/aos.css" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!------------------------------->
@@ -121,7 +122,7 @@
                           <a class="p-prof-summary__twitterlink icon" href="https://mobile.twitter.com/tomomi_dwyl">
                             <i class="p-prof-summary__twitter-icon fab fa-twitter"></i>
                           </a>
-                          <a class="p-prof-summary__bloglink icon" href="https://mobile.twitter.com/tomomi_dwyl">
+                          <a class="p-prof-summary__bloglink icon" href="http://www.dekiruko.work/">
                             <i class="p-prof-summary__blog-icon fas fa-blog"></i>
                           </a>
                         </div>
@@ -238,8 +239,8 @@
                           <div class="p-prof-detail__text">
                             <h4 class="p-prof-detail__sub-title">長所：試し継続する</h4>
                             気になることはとにかく試す性格。</br>
-                            動画教材にはなくても、APIについて調べてみたり、
-                            DIYで壁を塗ってみたり、旅に出てみたりとさまざまなことに挑戦。</br>
+                            プログラミングの勉強を初めてみたり、DIYで壁を塗ってみたり、
+                            旅に出てみたりとさまざまなことに挑戦。</br>
                             <a href="#works">アウトプットの作成</a>など、何らかの結果が出るまで行動する。
                             <h4 class="p-prof-detail__sub-title">短所：初動が遅い</h4>
                             元々引っ込み思案かつ心配性。</br>
