@@ -1,0 +1,17 @@
+.js-show-hum{
+  transform: translateX(0);
+  transition: .5s;
+}
+.js-hide-btn{
+  &::before{
+    transition: .5s;
+    transform: rotate(-45deg) translate(-5px, 10px);
+  }
+  &::after{
+    transition: .5s;
+    transform: rotate(45deg) translate(-8px, -11px);
+  }
+  & .p-header__humberger-stick{
+    opacity: 0;
+  }
+}

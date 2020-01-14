@@ -4,7 +4,9 @@
   padding-top: 60px;
   align-items: center;
   justify-content: center;
-  background: $c-main;
+  background-image: url('../img/shimane-sora.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
   &__title-item{
     padding-right: $span-s;
     font-size: $font-xxl;

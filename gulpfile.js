@@ -47,7 +47,7 @@ const watchImage = () =>
 //-------------------------
 const Browserify = () =>
 gulp
-  .src("src/js/*.js")
+  .src("src/js/**.js")
   .pipe( browserify() )
   .pipe(rename("build.js"))
   .pipe(gulp.dest("./dist/js/"));

@@ -1,5 +1,7 @@
 .p-profile{
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: $span-xl 0;
   @include iphone6{
     flex-direction: column;
@@ -8,4 +10,5 @@
 }
 .p-profile-wrap{
   flex-direction: column;
+  box-shadow: 0px 0px 8px 2px #ddd inset;
 }

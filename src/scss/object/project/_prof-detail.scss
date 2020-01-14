@@ -1,0 +1,74 @@
+.p-prof-detail{
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: $span-s;
+  @include iphone6{
+    width: 100%;
+  }
+  &__contents{
+    @extend .p-prof-detail;
+    display:none;
+    @include iphone6{
+      padding: 0;
+    }
+  }
+  &__title{
+    padding: $span-ss;
+    font-size: $font-xl;
+    color: $c-font-sub;
+    &::first-letter{
+      font-size: 2em;
+      color: $c-sub2;
+    }
+    @include iphone6{
+      padding: 10px 0;
+      font-size: $font-ll;
+    }
+  }
+  &__sub-title{
+    font-size: 20px;
+    border-bottom: 2px solid #e6a1b8;
+  }
+  &__date{
+    font-size: $span-s;
+    @include iphone6{
+      font-size: $font-s;
+    }
+  }
+  &__texts{
+    align-items: center;
+    @include iphone6{
+      flex-direction: column;
+    }
+  }
+  &__imgbox{
+    width: 50%;
+    &.mobile-none{
+      @include iphone6{
+        display: none;
+      }
+    }
+    @include iphone6{
+      width: 100%;
+    }
+  }
+  &__imgbox-mobile{
+    display: none;
+    @include iphone6{
+      display: block;
+    }
+  }
+  &__img{
+    width: 100%;
+  }
+  &__text{
+    width: 50%;
+    padding: $span-s;
+    letter-spacing: 1px;
+    @include iphone6{
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+}

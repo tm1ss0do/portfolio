@@ -2,6 +2,7 @@
   width: 80%;
   @include iphone6{
     width: 100%;
+    justify-content: space-between;
   }
   &__title{
     width: 20%;
@@ -13,10 +14,14 @@
   &__menu{
     justify-content: flex-end;
     width: 80%;
-
+    display: flex;
+    @include iphone6{
+      display: none;
+    }
   }
   &__menu-item{
     font-size: $font-m;
+    transition: .5s;
     @include iphone6{
       font-size: $font-s;
     }
@@ -30,9 +35,44 @@
     padding: $span-s $span-l;
     display: block;
   }
-  & ul{
+  //hunberger
+  &__humberger{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transform: translateX(100vw);
+    transition: .5s;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: $font-xl;
+    background: $c-back-sub-opa;
     @include iphone6{
-      display: none;
+      display: flex;
     }
+  }
+  &__humberger-icon{
+    display: none;
+    @include iphone6{
+      display: flex;
+    }
+    flex-direction: column;
+    justify-content: space-around;
+    margin: $span-ss;
+    z-index: 10;
+    &::before{
+      content: "";
+      border-bottom: 4px solid black;
+      display: block;
+      transition: .5s;
+    }
+    &::after{
+      @extend .p-header__humberger-icon::before;
+    }
+  }
+  &__humberger-stick{
+    border-bottom: 4px solid black;
+    width: 50px;
   }
 }

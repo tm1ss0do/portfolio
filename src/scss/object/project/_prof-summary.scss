@@ -12,7 +12,6 @@
   &__mypic{
     width: 250px;
     height: 250px;
-
   }
   &__img{
     width: 100%;
@@ -63,11 +62,13 @@
     }
   }
   &__twitterlink{
+    transition: .5s;
     &:hover{
       color: $c-twitter;
     }
   }
   &__bloglink{
+    transition: .5s;
     &:hover{
       color: $c-blog;
     }

@@ -34,9 +34,13 @@ $f-s-title: 'M PLUS Rounded 1c',sans-serif;
 //カラー
 //-----------
 $c-main: #99cc8f; //green
+$c-main-opa: rgba(153, 204, 143, 0.5);
 $c-sub: #ffd280; //orange
 $c-sub2: #e6a1b8; //pink
-$c-sub4: #fff7b3; //yellow
+$c-sub3: #fff7b3; //yellow
+$c-sub4: #7a96cc; //blue
+$c-sub4-opa: rgba(122, 150, 204, .5);
+
 
 $c-font: #1a1912;
 $c-font-sub: #808080;
@@ -97,7 +101,8 @@ $c-blog: #fff7b3;
 @import "object/project/_skill";
 @import "object/project/_work";
 @import "object/project/_contact";
-
+@import "object/project/_more-info";
+@import "object/project/_prof-detail";
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
@@ -107,3 +112,4 @@ $c-blog: #fff7b3;
 @import "object/utility/_appear";
 @import "object/utility/_background-color";
 @import "object/utility/_mypic-move";
+@import "object/utility/_js";

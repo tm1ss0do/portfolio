@@ -8,7 +8,7 @@
   &__wrap{
     width: 30%;
     max-height: 450px;
-    background: $c-back-sub;
+    background: $c-back-main;
     padding: $span-s;
     border-radius: 3px;
     -moz-border-radius: 3px;
@@ -33,6 +33,11 @@
   }
   &__img{
     width: 100%;
+    transition: .5s;
+    &:hover{
+      transform: rotate(5deg) scale(1.2);
+      transition: .5s;
+    }
   }
   &__create-date{
     font-size: $font-m;
@@ -42,7 +47,7 @@
     min-height: 10%;
   }
   &__use-skill{
-    background: #fff;
+    background: $c-back-sub;
     line-height: 30px;
     height: 30px;
     padding: 0 $span-ss;
@@ -55,14 +60,22 @@
     }
   }
   &__summary-text{
-    background: #fff;
+    background: $c-back-sub;
     height: 100px;
     padding: $span-ss;
     border-radius: 3px;
   }
   &__summary-link{
+    transition: .2s;
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    border-bottom: 2px dashed $c-sub4;
     &:hover{
-      color: $c-main;
+      background: $c-sub;
     }
+  }
+  &__summary-item{
+    margin-bottom: 10px;
   }
 }

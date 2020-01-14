@@ -1,9 +1,38 @@
 .mypic-move{
-  animation: undefined-easeOutElastic 2s ease 0s;
+  animation: swingAni 1s ease 0s;
 }
 .mupic-stop{
   animation: none;
 }
+
+
+@keyframes swingAni {
+	0% {
+		transform: rotate(-30deg);
+	}
+
+	16% {
+		transform: rotate(30deg);
+	}
+
+	44% {
+		transform: rotate(-15deg);
+	}
+
+	59% {
+		transform: rotate(10deg);
+	}
+
+	78% {
+		transform: rotate(-5deg);
+	}
+
+	100% {
+		transform: rotate(0);
+	}
+
+}
+
 
 @keyframes undefined-easeOutElastic {
 	0% {
