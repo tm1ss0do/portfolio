@@ -327,7 +327,7 @@
                                 2019.12.20〜12.22
                               </li>
                               <li class="c-work__summary-item">
-                                <a class="c-work__summary-link" href="https://github.com/tm1ss0do/portfolio">
+                                <a class="c-work__summary-link" href="https://github.com/tm1ss0do/portfolio" target="_blank">
                                   <i class="c-work__summary-git-icon icon fab fa-github"></i>
                                   github
                                 </a>
@@ -340,7 +340,7 @@
                       <div class="c-work__wrap" data-aos="fade-up">
                         <h2 class="c-work__create-date">up:2019年11月</h2>
                         <div class="c-work__imgbox">
-                          <a href="http://cafe-responsive.tomomi-s.xyz/" target="_blank">
+                          <a href="https://cafe-responsive.tomomi-s.xyz/" target="_blank">
                             <img class="c-work__img" src="dist/img/cafe-responsive.png" alt="cafe-responsive">
                             <div class="c-work__msg-panel js-hover-message disappear">
                               cafe</br>
@@ -363,11 +363,13 @@
                                 2019.11.8〜11.17
                               </li>
                               <li class="c-work__summary-item">
-                                <i class="c-work__summary-git-icon icon fab fa-github"></i>
-                                リンク準備中
+                                <a class="c-work__summary-link" href="https://github.com/tm1ss0do/cafe-responsive" target="_blank">
+                                  <i class="c-work__summary-git-icon icon fab fa-github"></i>
+                                  github
+                                </a>
                               </li>
                               <li class="c-work__summary-item">
-                                <a class="c-work__summary-link" href="https://dekiruko.work/2019/11/30/%e3%82%a2%e3%82%a6%e3%83%88%e3%83%97%e3%83%83%e3%83%88%e3%80%8ccafe%e3%80%8d%e3%81%ae%e4%bd%9c%e6%88%90%e6%99%82%e9%96%93%e8%a8%98%e9%8c%b2/">
+                                <a class="c-work__summary-link" href="https://dekiruko.work/2019/11/30/%e3%82%a2%e3%82%a6%e3%83%88%e3%83%97%e3%83%83%e3%83%88%e3%80%8ccafe%e3%80%8d%e3%81%ae%e4%bd%9c%e6%88%90%e6%99%82%e9%96%93%e8%a8%98%e9%8c%b2/" target="_blank">
                                   <i class="c-work__summary-blog-icon icon fas fa-blog"></i>
                                   アウトプット「cafe」の作成時間記録
                                 </a>
@@ -380,7 +382,7 @@
                       <div class="c-work__wrap" data-aos="fade-up">
                         <h2 class="c-work__create-date">up:2019年10月</h2>
                         <div class="c-work__imgbox">
-                          <a href="http://miina.tomomi-s.xyz/" target="_blank">
+                          <a href="https://miina.tomomi-s.xyz/" target="_blank">
                             <img class="c-work__img" src="dist/img/miina.png" alt="miina">
                             <div class="c-work__msg-panel js-hover-message disappear">
                               miina</br>
@@ -403,11 +405,13 @@
                                 2019.9.29〜10.9
                               </li>
                               <li class="c-work__summary-item">
-                                <i class="c-work__summary-git-icon icon fab fa-github"></i>
-                                リンク準備中
+                                <a class="c-work__summary-link" href="https://github.com/tm1ss0do/miina" target="_blank">
+                                  <i class="c-work__summary-git-icon icon fab fa-github"></i>
+                                  github
+                                </a>
                               </li>
                               <li class="c-work__summary-item">
-                                <a class="c-work__summary-link" href="https://dekiruko.work/2019/09/30/">
+                                <a class="c-work__summary-link" href="https://dekiruko.work/2019/09/30/" target="_blank">
                                   <i class="c-work__summary-blog-icon icon fas fa-blog"></i>
                                   アウトプット”miina”作成中
                                 </a>
