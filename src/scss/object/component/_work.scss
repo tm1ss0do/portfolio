@@ -1,31 +1,43 @@
 .c-work{
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: $span-ll;
+  margin-top: $span-ll;
   @include iphone6{
     flex-direction: column;
     margin-bottom: 0;
   }
   &__wrap{
     width: 30%;
-    max-height: 450px;
-    background: $c-back-main;
-    padding: $span-s;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    position: relative;
+    @include iphone6{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__wrap-modal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    @include iphone6{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__modal-contents {
+    flex-direction: column;
+    align-items: center;
+    @include iphone6{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__details-wrap{
+    width: 50%;
     @include iphone6{
       width: 100%;
     }
-  }
-  &__new-imgbox{
-    width: 100px;
-    height: 60px;
-    position: absolute;
-    margin-top: -$span-xl;
-    margin-left: -$span-s;
-  }
-  &__new-img{
-    width: 100%;
   }
   &__imgbox{
     max-height: 200px;
@@ -34,48 +46,86 @@
   &__img{
     width: 100%;
     transition: .5s;
-    &:hover{
-      transform: rotate(5deg) scale(1.2);
-      transition: .5s;
+    object-fit: cover;
+  }
+
+  &__img-link{
+    display: block;
+    max-height: 300px;
+    @include iphone6{
+      width: 100%;
     }
   }
-  &__create-date{
-    font-size: $font-m;
-    color: $c-font-sub;
+  &__hover-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: .5s;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $c-main-opa;
+        transform: translateX(-100%);
+        transition: .5s;
+
+      }
+      &:hover {
+        &:before{
+          transform: translateX(0);
+        }
+      }
   }
-  &__skill{
-    min-height: 10%;
+  &__hover-text{
+    z-index: 10;
   }
-  &__use-skill{
+  &__content-text{
     background: $c-back-sub;
-    line-height: 30px;
-    height: 30px;
-    padding: 0 $span-ss;
-    border-radius: 3px;
-  }
-  &__summary{
-    font-size: $font-s;
-    & .icon{
-      font-size: $font-m;
-    }
-  }
-  &__summary-text{
-    background: $c-back-sub;
-    height: 100px;
     padding: $span-ss;
     border-radius: 3px;
   }
-  &__summary-link{
+  &__btn-wrap{
+    display: flex;
+    justify-content: center;
+    @include iphone6{
+      flex-direction: column;
+    }
+  }
+  &__content-link{
     transition: .2s;
     display: inline-block;
     width: 100%;
+    text-align: center;
     border-radius: 3px;
-    border-bottom: 2px dashed $c-sub4;
+    color: $c-sub2;
+    border: 1px solid $c-sub2;
+    padding: $span-ss;
     &:hover{
-      background: $c-sub;
+      background: $c-sub2;
+      color: #fff;
+    }
+    @include iphone6{
+      width: 100%;
+      padding: $span-ss;
     }
   }
-  &__summary-item{
-    margin-bottom: 10px;
+  &__content-item{
+    margin-bottom: $span-ss;
+    border-bottom: 2px dashed $c-sub4;
+
+  }
+  &__subtitle{
+    font-size: $font-m;
+    color: $c-sub4;
   }
 }

@@ -1,0 +1,72 @@
+.p-arrow{
+  width: 200px;
+  box-sizing: border-box;
+  border-bottom: 8px solid $c-sub4;
+  @include iphone6{
+    display: none;
+  }
+  &.new{
+    left: 10%;
+    border-left: 8px solid transparent;
+  }
+  &.old{
+    border-right: 8px solid transparent;
+  }
+  &__span{
+    position: relative;
+    bottom: -5px;
+    margin-right: $span-ss;
+    display: inline-block;
+    border: $span-ss solid $c-sub4;
+    border-top: $span-ss solid transparent;
+    &.new{
+      border-left: $span-ss solid transparent;
+    }
+    &.old{
+      border-right: $span-ss solid transparent;
+      left: 74%;
+    }
+  }
+  &__container{
+    width: 90%;
+    display: flex;
+    &.new{
+      margin-bottom: $span-ll;
+    }
+    &.old{
+      justify-content: flex-end;
+      margin-top: $span-ll;
+    }
+  }
+
+}
+
+.p-arrow-mobile{
+  text-align: center;
+  display: none;
+  @include iphone6{
+    display: block;
+  }
+  &__span{
+    width: $font-l;
+    height: $font-l;
+    &.new{
+      position: relative;
+      top: $span-ss;
+      left: $span-ss;
+      margin-right: $font-l;
+      border: 5px solid;
+      border-color: #565656 #565656 transparent transparent;
+      transform: rotate(-45deg);
+      display: inline-block;
+    }
+    &.old{
+      position: relative;
+      margin-left: $span-ss;
+      border: 5px solid;
+      border-color: #565656 #565656 transparent transparent;
+      transform: rotate(135deg);
+      display: inline-block;
+    }
+  }
+}

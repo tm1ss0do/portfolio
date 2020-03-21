@@ -6,6 +6,9 @@
   @include iphone6{
     width: 100%;
   }
+  &__wrap{
+    position: relative;
+  }
   &__contents{
     @extend .p-prof-detail;
     display:none;
@@ -14,6 +17,7 @@
     }
   }
   &__title{
+    position: absolute;
     padding: $span-ss;
     font-size: $font-xl;
     color: $c-font-sub;
@@ -25,6 +29,9 @@
       padding: 10px 0;
       font-size: $font-ll;
     }
+  }
+  &__title-right{
+    right: 0;
   }
   &__sub-title{
     font-size: 20px;

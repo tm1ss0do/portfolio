@@ -16,6 +16,7 @@ $span-xxl: 90px;
 //-----------
 //フォントサイズ
 //-----------
+$font-ss: 10px;
 $font-s: 14px;
 $font-m: 17px;
 $font-l: 20px;
@@ -33,12 +34,12 @@ $f-s-title: 'M PLUS Rounded 1c',sans-serif;
 //-----------
 //カラー
 //-----------
-$c-main: #99cc8f; //green
-$c-main-opa: rgba(153, 204, 143, 0.5);
+$c-main: #b2e6a8; //green
+$c-main-opa: rgba(178, 230, 168, 0.5);
 $c-sub: #ffd280; //orange
 $c-sub2: #e6a1b8; //pink
 $c-sub3: #fff7b3; //yellow
-$c-sub4: #7a96cc; //blue
+$c-sub4: #5bc0de; //blue
 $c-sub4-opa: rgba(122, 150, 204, .5);
 
 
@@ -56,13 +57,23 @@ $c-blog: #fff7b3;
 //========================
 //レスポンシブ
 //========================
-@mixin iphone6($max-width:400px) {
+@mixin iphone6($max-width:415px) {
  @media screen and (max-width: $max-width){
   @content;
  }
 }
 
+@mixin iphone5($max-width:320px) {
+ @media screen and (max-width: $max-width){
+  @content;
+ }
+}
 
+@mixin ipad($max-width:768px) {
+ @media screen and (max-width: $max-width){
+  @content;
+ }
+}
 
 // ==========================================================================
 // Foundation
@@ -77,6 +88,7 @@ $c-blog: #fff7b3;
 @import "layout/_footer";
 @import "layout/_header";
 @import "layout/_main";
+@import "layout/_works";
 
 // ==========================================================================
 // Object
@@ -86,30 +98,30 @@ $c-blog: #fff7b3;
 // Component
 // -----------------------------------------------------------------
 
-@import "object/component/_hero";
+@import "object/component/_card";
+@import "object/component/_content";
+@import "object/component/_info";
 @import "object/component/_skill";
 @import "object/component/_title";
 @import "object/component/_work";
+
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
+@import "object/project/_arrow";
 @import "object/project/_header";
-@import "object/project/_prof-summary";
-@import "object/project/_profile";
-@import "object/project/_skill";
-@import "object/project/_work";
-@import "object/project/_contact";
-@import "object/project/_more-info";
 @import "object/project/_prof-detail";
+@import "object/project/_prof-summary";
+@import "object/project/_skill";
+@import "object/project/_tab-content";
+
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
+
 @import "object/utility/_flex";
-@import "object/utility/_site-width";
-@import "object/utility/_disappear";
-@import "object/utility/_appear";
-@import "object/utility/_background-color";
-@import "object/utility/_mypic-move";
 @import "object/utility/_js";
+@import "object/utility/_site-width";
+@import "object/utility/_text";
