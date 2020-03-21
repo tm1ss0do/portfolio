@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="dist/css/reset.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kosugi|M+PLUS+Rounded+1c|Noto+Sans+JP|Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="node_modules/aos/dist/aos.css" /> -->
+    <link rel="stylesheet" href="modaal.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+
     <!------------------------------->
     <!--header-->
     <!------------------------------->
-    <header id="header" class="flex bg-color-sub js-header js-header-bg-color-sub">
+    <header id="header" class="flex bg-color-sub js-header">
       <div class="p-header flex">
         <h1 class="p-header__title">
           <a href="#header">portfolio</a>
         </h1>
         <ul class="p-header__menu">
           <li class="p-header__menu-item">
-            <a class="p-header__item-link" href="#profile">profile</a>
+            <a class="p-header__item-link js-tab" data-tab="about">about</a>
           </li>
           <li class="p-header__menu-item">
-            <a class="p-header__item-link" href="#works">works</a>
+            <a class="p-header__item-link js-tab" data-tab="works">works</a>
           </li>
           <li class="p-header__menu-item">
-            <a class="p-header__item-link" href="#skill">skill</a>
+            <a class="p-header__item-link js-tab" data-tab="skill">skill</a>
           </li>
           <li class="p-header__menu-item">
-            <a class="p-header__item-link" href="#contact">contact</a>
+            <a class="p-header__item-link js-tab" data-tab="profile">profile</a>
           </li>
         </ul>
         <!------------------------------->
@@ -42,7 +43,7 @@
         </ul>
         <ul class="p-header__humberger js-hum-menu">
           <li class="p-header__humberger-item js-item-link">
-            <a class="p-header__humberger-link" href="#profile">profile</a>
+            <a class="p-header__humberger-link" href="#about">about</a>
           </li>
           <li class="p-header__humberger-item js-item-link">
             <a class="p-header__humberger-link" href="#works">works</a>
@@ -51,611 +52,635 @@
             <a class="p-header__humberger-link" href="#skill">skill</a>
           </li>
           <li class="p-header__humberger-item js-item-link">
-            <a class="p-header__humberger-link" href="#contact">contact</a>
+            <a class="p-header__humberger-link" href="#profile">profile</a>
           </li>
         </ul>
 
       </div>
     </header>
 
-
-    <!------------------------------->
-    <!--hero-->
-    <!------------------------------->
-    <div class="c-hero flex js-hero">
-      <h1 class="c-hero__title">
-        <ul class="c-hero__title-anime flex">
-          <li class="c-hero__title-item">P</li>
-          <li class="c-hero__title-item">o</li>
-          <li class="c-hero__title-item">r</li>
-          <li class="c-hero__title-item">t</li>
-          <li class="c-hero__title-item">f</li>
-          <li class="c-hero__title-item">o</li>
-          <li class="c-hero__title-item">l</li>
-          <li class="c-hero__title-item">i</li>
-          <li class="c-hero__title-item">o</li>
-        </ul>
-      </h1>
-    </div>
     <!------------------------------->
     <!--main-->
     <!------------------------------->
     <main id="main" class="flex">
 
-              <!------------------------------->
-              <!--profile-->
-              <!------------------------------->
+      <!------------------------------->
+      <!--about-->
+      <!------------------------------->
+      <section id="about" class="p-tab-content js-tab-container">
+          <div class="p-about__wrapper">
 
-              <section id="profile" class="p-profile-wrap flex js-prof-height">
-                <h1 class="c-title flex">
-                  <span class="c-title__text">PROFILE</span>
-                </h1>
-                <div class="p-profile flex">
-                  <div class="p-prof-summary flex site-width">
+            <h1 class="c-title flex">
+              <span class="c-title__text">ABOUT</span>
+            </h1>
 
-                    <div class="p-prof-summary__itemizebox flex">
-                      <div class="p-prof-summary__itemize flex">
+            <div class="p-about flex justify-content-center">
+              <div class="c-card__text text-center">
+                このページは佐々木智美のポートフォリオサイトです。</br>
+                フロントエンドを中心にバックエンドも学習中。</br>
+                簡易的なウェブサービスをフルスタックで作ったり、
+                レスポンシブ対応させたりといったことに挑戦しています。</br>
+                制作したサイトを作成・公開しているので、ご覧いただけると幸いです。
+              </div>
 
-                        <ul class="p-prof-summary__list">
-                          <li class="p-prof-summary__list-item">
-                            <i class="far fa-user"></i>
-                            SASAKI TOMOMI
-                          </li>
-                          <li class="p-prof-summary__list-item">
-                            <i class="fas fa-birthday-cake"></i>
-                            1992.11.25
-                          </li>
-                          <li class="p-prof-summary__list-item">
-                            <i class="fas fa-home"></i>
-                            島根県
-                          </li>
-                          <li class="p-prof-summary__list-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            教育大学国語科卒業
-                          </li>
-                          <li class="p-prof-summary__list-item">
-                            <i class="fas fa-briefcase"></i>
-                            ウェブライター
-                          </li>
-                        </ul>
-                        <div class="p-prof-summary__icon-wrap">
-                          <a class="p-prof-summary__twitterlink icon" href="https://mobile.twitter.com/tomomi_dwyl">
-                            <i class="p-prof-summary__twitter-icon fab fa-twitter"></i>
-                          </a>
-                          <a class="p-prof-summary__bloglink icon" href="http://www.dekiruko.work/">
-                            <i class="p-prof-summary__blog-icon fas fa-blog"></i>
-                          </a>
-                        </div>
+          </div>
 
-                      </div>
-                    </div>
-
-                      <div class="p-prof-summary__mypic js-movein-mypic">
-                        <img class="p-prof-summary__img" src="dist/img/prof-img.jpg" alt="">
-                      </div>
-
-                    <div class="p-prof-summary__base-info">
-                      <div class="p-prof-summary__text-back">
-                        <img class="p-prof-summary__text-back-img" src="dist/img/hukidashi-mokomoko.png" alt="">
-                      </div>
-                      <div class="p-prof-summary__text">
-                        はじめまして！佐々木智美と申します。</br>
-                        2019年からプログラミング学習をスタートしました。</br>
-                        フロントエンドを中心にバックエンドも学習中です。</br>
-                        このページでは制作物のほか、私の経歴や趣味などをご紹介しています。</br>
-                        ご覧いただけると幸いです。
-                      </div>
-                    </div>
-
-                  </div>
+        </div>
+      </section>
 
 
-                  <!------------------------------->
-                  <!--profile-detail-->
-                  <!------------------------------->
-                  <div class="p-prof-detail flex js-prof-detail-height">
-                    <h2 class="p-more-info js-view-more">
-                      more info</br>
-                      <i class="fas fa-sort-up p-more-info__icon-up js-icon"></i>
-                      <i class="fas fa-sort-down p-more-info__icon-down js-icon"></i>
-                    </h2>
+
+      <!------------------------------->
+      <!--works-->
+      <!------------------------------->
+      <section id="works" class="p-tab-content js-tab-container is-show">
+
+            <h1 class="c-title flex">
+              <span class="c-title__text">WORKS</span>
+            </h1>
+
+            <p class="p-arrow-mobile"><span class="p-arrow-mobile__span new"></span>New/Old<span class="p-arrow-mobile__span old"></span></p>
 
 
-                    <div class="p-prof-detail__contents site-width js-view-prof-detail">
 
-                      <div class="p-prof-detail__wrap previous-work site-width">
-                        <h3 class="p-prof-detail__title">前職について
-                          <span class="p-prof-detail__date">2016-2017年</span>
-                        </h3>
-                        <div class="p-prof-detail__texts flex">
-                          <div class="p-prof-detail__imgbox">
-                            <img class="p-prof-detail__img" src="dist/img/blue-worker.jpg" alt="blue-worker">
-                          </div>
-                          <div class="p-prof-detail__text">
-                            大学卒業後、設備業の会社の営業技術職として採用される。</br>
-                            新築現場の設備工事補助業務と法人営業に従事。</br>
-                            従業員の高齢化などにより点検業務の人手が不足し、
-                            歴史ある建造物での点検業務へシフト。</br>
-                            素晴らしい同僚に恵まれながらも、苦手な虫が多い天井裏や軒下などで長時間作業する内、
-                            適応障害になり退職。（現在は完治。）</br>
-                            </br>
-                            取得資格：消防設備士甲種4類（現在は失行済み）
-                          </div>
-                        </div>
-                      </div>
+            <div class="c-work flex justify-content-center">
 
+              <div class="p-arrow__container new">
+                <p class="p-arrow new">
+                  <span class="p-arrow__span new"></span>
+                  New
+                </p>
+              </div>
 
-                      <div class="p-prof-detail__wrap previous-work site-width">
-                        <h3 class="p-prof-detail__title">現職について
-                          <span class="p-prof-detail__date">2017-現在</span>
-                        </h3>
-                        <div class="p-prof-detail__texts flex">
-                          <div class="p-prof-detail__imgbox-mobile">
-                            <img class="p-prof-detail__img" src="dist/img/writer-pic.jpg" alt="blue-worker">
-                          </div>
-                          <div class="p-prof-detail__text">
-                            前職で消防設備士の知識を生かして設備の設計図を作るのが特に楽しかったことから、
-                            「知識を生かし、作り、役立つ仕事」に絞って転職活動を開始。</br>
-                            製品をリサーチし、得た情報を噛み砕いて広めるライター業に興味を持つ。</br>
-                            クラウドワークスにてライター業務を請け負い、半年後に開業。</br>
-                            現在は大手家電メーカーの製品紹介メディアで、オーディオ機器を中心に幅広く記事を担当。
-                          </div>
-                          <div class="p-prof-detail__imgbox mobile-none">
-                            <img class="p-prof-detail__img" src="dist/img/writer-pic.jpg" alt="blue-worker">
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <div class="p-prof-detail__wrap previous-work site-width">
-                        <h3 class="p-prof-detail__title">これからについて
-                          <span class="p-prof-detail__date">2019-未来</span>
-                        </h3>
-                        <div class="p-prof-detail__texts flex">
-                          <div class="p-prof-detail__imgbox">
-                            <img class="p-prof-detail__img" src="dist/img/catEngineer.jpg" alt="blue-worker">
-                          </div>
-                          <div class="p-prof-detail__text">
-                            ワードプレスへ入稿する際、HTMLの知識が必要とされたのをきっかけに、
-                            2019年4月からプログラミング学習をスタート。</br>
-                            Progateや動画教材を使い、前々から興味のあったPythonから勉強を始めるも、
-                            JavaScriptの知識が前提となっていたため、フロントエンド中心の勉強へシフト。</br>
-                            勉強するうちに楽しさに気が付く。</br>
-                            さらに、転職活動中に指標としていた「知識を生かし、作り、役立つ仕事」とも合致するため、
-                            エンジニアを目指す。</br>
-                            30年後にはアンドロイドと暮らすのが夢。
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <div class="p-prof-detail__wrap previous-work site-width">
-                        <h3 class="p-prof-detail__title">長所と短所
-                        </h3>
-                        <div class="p-prof-detail__texts flex">
-                          <div class="p-prof-detail__imgbox-mobile">
-                            <img class="p-prof-detail__img" src="dist/img/booknharinezumi.jpg" alt="blue-worker">
-                          </div>
-                          <div class="p-prof-detail__text">
-                            <h4 class="p-prof-detail__sub-title">長所：試し継続する</h4>
-                            気になることはとにかく試す性格。</br>
-                            プログラミングの勉強を初めてみたり、DIYで壁を塗ってみたり、
-                            旅に出てみたりとさまざまなことに挑戦。</br>
-                            <a href="#works">アウトプットの作成</a>など、何らかの結果が出るまで行動する。
-                            <h4 class="p-prof-detail__sub-title">短所：初動が遅い</h4>
-                            元々引っ込み思案かつ心配性。</br>
-                            そのため、新しい言語を学ぶ前に少し躊躇してしまう、
-                            何度も同じ箇所を確認してしまうなどの欠点がある。</br>
-                            改善のために認知行動療法を実践中。運動やマインドフルネスを生活に取り入れている。
-                          </div>
-                          <div class="p-prof-detail__imgbox mobile-none">
-                            <img class="p-prof-detail__img" src="dist/img/booknharinezumi.jpg" alt="blue-worker">
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="p-prof-detail__wrap previous-work site-width">
-                        <h3 class="p-prof-detail__title">趣味
-                        </h3>
-                        <div class="p-prof-detail__texts flex">
-                          <div class="p-prof-detail__imgbox">
-                            <img class="p-prof-detail__img" src="dist/img/cycling.jpg" alt="blue-worker">
-                          </div>
-                          <div class="p-prof-detail__text">
-                            サイクリング・DIY・ドラム・旅・映画・読書・漫画・アニメ・ゲーム実況・ボードゲーム・声優など</br>
-
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <h2 class="p-more-info js-slideup">
-                        閉じる
-                        <i class="fas fa-sort-up p-more-info__icon-up under-icon js-icon-up"></i>
-                      </h2>
-
-                    </div>
-
-
-                  </div>
-
-
+              <div class="c-work__wrap" data-aos="fade-up">
+                <div class="c-work__imgbox">
+                  <img class="c-work__img" src="dist/img/booksmap.png" alt="booksmap">
                 </div>
-              </section>
+                <a href="#js-modal-booksmap" class="js-modal c-work__hover-wrap text-center">
+                  <p class="c-work__hover-text">FuelPHPを使ったWebサービス</p>
+                </a>
+              </div>
 
-              <!------------------------------->
-              <!--works-->
-              <!------------------------------->
-              <section id="works" class="p-work-wrapper flex">
-
-                <h1 class="c-title flex">
-                  <span class="c-title__text">WORKS</span>
-                </h1>
-
-                <div class="p-work flex">
-
-                  <div class="p-work__contents-wrap flex site-width">
-
-
-                    <div class="c-work flex">
-
-                      <div class="c-work__wrap" data-aos="fade-up">
-                        <div class="c-work__new-imgbox">
-                          <img class="c-work__new-img" src="dist/img/new-flag.png" alt="new-flag">
-                        </div>
-                        <h2 class="c-work__create-date">up:2019年12月(2020年1月更新)</h2>
-                        <div class="c-work__imgbox">
-                          <a href="#" target="_blank">
-                            <img class="c-work__img" src="dist/img/portfolio.png" alt="">
-                            <div class="c-work__msg-panel js-hover-message disappear">
-                              portfolio
-                            </div>
-                          </a>
-                        </div>
-                        <div class="c-work__skills">
-                          <h3 class="c-work__title">use</h3>
-                          <div class="c-work__use-skill">
-                            scss/FLOCSS/npm
-                          </div>
-                        </div>
-                        <div class="c-work__summary">
-                          <h3 class="c-work__title">summary</h3>
-                          <div class="c-work__summary-text">
-                            <ul>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-time-icon icon fas fa-history"></i>
-                                2019.12.20〜12.22
-                              </li>
-                              <li class="c-work__summary-item">
-                                <a class="c-work__summary-link" href="https://github.com/tm1ss0do/portfolio" target="_blank">
-                                  <i class="c-work__summary-git-icon icon fab fa-github"></i>
-                                  github
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="c-work__wrap" data-aos="fade-up">
-                        <h2 class="c-work__create-date">up:2019年11月</h2>
-                        <div class="c-work__imgbox">
-                          <a href="https://cafe-responsive.tomomi-s.xyz/" target="_blank">
-                            <img class="c-work__img" src="dist/img/cafe-responsive.png" alt="cafe-responsive">
-                            <div class="c-work__msg-panel js-hover-message disappear">
-                              cafe</br>
-                              -responsive-
-                            </div>
-                          </a>
-                        </div>
-                        <div class="c-work__skills">
-                          <h3 class="c-work__title">use</h3>
-                          <div class="c-work__use-skill">
-                            scss/FLOCSS/npm
-                          </div>
-                        </div>
-                        <div class="c-work__summary">
-                          <h3 class="c-work__title">summary</h3>
-                          <div class="c-work__summary-text">
-                            <ul>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-time-icon icon fas fa-history"></i>
-                                2019.11.8〜11.17
-                              </li>
-                              <li class="c-work__summary-item">
-                                <a class="c-work__summary-link" href="https://github.com/tm1ss0do/cafe-responsive" target="_blank">
-                                  <i class="c-work__summary-git-icon icon fab fa-github"></i>
-                                  github
-                                </a>
-                              </li>
-                              <li class="c-work__summary-item">
-                                <a class="c-work__summary-link" href="https://dekiruko.work/2019/11/30/%e3%82%a2%e3%82%a6%e3%83%88%e3%83%97%e3%83%83%e3%83%88%e3%80%8ccafe%e3%80%8d%e3%81%ae%e4%bd%9c%e6%88%90%e6%99%82%e9%96%93%e8%a8%98%e9%8c%b2/" target="_blank">
-                                  <i class="c-work__summary-blog-icon icon fas fa-blog"></i>
-                                  アウトプット「cafe」の作成時間記録
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="c-work__wrap" data-aos="fade-up">
-                        <h2 class="c-work__create-date">up:2019年10月</h2>
-                        <div class="c-work__imgbox">
-                          <a href="https://miina.tomomi-s.xyz/" target="_blank">
-                            <img class="c-work__img" src="dist/img/miina.png" alt="miina">
-                            <div class="c-work__msg-panel js-hover-message disappear">
-                              miina</br>
-                              -フルスクラッチ-
-                            </div>
-                          </a>
-                        </div>
-                        <div class="c-work__skills">
-                          <h3 class="c-work__title">use</h3>
-                          <div class="c-work__use-skill">
-                            php/MySQL/Apache
-                          </div>
-                        </div>
-                        <div class="c-work__summary">
-                          <h3 class="c-work__title">summary</h3>
-                          <div class="c-work__summary-text">
-                            <ul>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-time-icon icon fas fa-history"></i>
-                                2019.9.29〜10.9
-                              </li>
-                              <li class="c-work__summary-item">
-                                <a class="c-work__summary-link" href="https://github.com/tm1ss0do/miina" target="_blank">
-                                  <i class="c-work__summary-git-icon icon fab fa-github"></i>
-                                  github
-                                </a>
-                              </li>
-                              <li class="c-work__summary-item">
-                                <a class="c-work__summary-link" href="https://dekiruko.work/2019/09/30/" target="_blank">
-                                  <i class="c-work__summary-blog-icon icon fas fa-blog"></i>
-                                  アウトプット”miina”作成中
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-
-                    <div class="c-work flex">
-
-                      <div class="c-work__wrap" data-aos="fade-up">
-                        <h2 class="c-work__create-date">2019年1月完成予定</h2>
-                        <div class="c-work__imgbox">
-                          <a href="http://miina.tomomi-s.xyz/" target="_blank">
-                            <img class="c-work__img" src="dist/img/making.png" alt="miina">
-                            <div class="c-work__msg-panel js-hover-message disappear">
-                              作成中</br>
-                              -FuelPHP&amp;オブジェクト指向-
-                            </div>
-                          </a>
-                        </div>
-                        <div class="c-work__skills">
-                          <h3 class="c-work__title">use</h3>
-                          <div class="c-work__use-skill">
-
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            FuelPHP
-                          </div>
-                        </div>
-                        <div class="c-work__summary">
-                          <h3 class="c-work__title">summary</h3>
-                          <div class="c-work__summary-text">
-                            <ul>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-time-icon icon fas fa-history"></i>
-                                2019.12〜
-                              </li>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-git-icon icon fab fa-github"></i>
-                                Coming soon...
-                              </li>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-blog-icon icon fas fa-blog"></i>
-                                Coming soon...
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="c-work__wrap" data-aos="fade-up">
-                        <h2 class="c-work__create-date">2019年1月完成予定</h2>
-                        <div class="c-work__imgbox">
-                          <a href="http://miina.tomomi-s.xyz/" target="_blank">
-                            <img class="c-work__img" src="dist/img/making.png" alt="miina">
-                            <div class="c-work__msg-panel js-hover-message disappear">
-                              作成中</br>
-                              -WordPress-
-                            </div>
-                          </a>
-                        </div>
-                        <div class="c-work__skills">
-                          <h3 class="c-work__title">use</h3>
-                          <div class="c-work__use-skill">
-                            <i class="fab fa-wordpress"></i>
-                            WordPress
-                          </div>
-                        </div>
-                        <div class="c-work__summary">
-                          <h3 class="c-work__title">summary</h3>
-                          <div class="c-work__summary-text">
-                            <ul>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-time-icon icon fas fa-history"></i>
-                                2019.1〜
-                              </li>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-git-icon icon fab fa-github"></i>
-                                Coming soon...
-                              </li>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-blog-icon icon fas fa-blog"></i>
-                                Coming soon...
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="c-work__wrap" data-aos="fade-up">
-                        <h2 class="c-work__create-date">2019年2月完成予定</h2>
-                        <div class="c-work__imgbox">
-                          <a href="http://miina.tomomi-s.xyz/" target="_blank">
-                            <img class="c-work__img" src="dist/img/making.png" alt="miina">
-                            <div class="c-work__msg-panel js-hover-message disappear">
-                              作成中</br>
-                              -vue.js-
-                            </div>
-                          </a>
-                        </div>
-                        <div class="c-work__skills">
-                          <h3 class="c-work__title">use</h3>
-                          <div class="c-work__use-skill">
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            veu.js
-                          </div>
-                        </div>
-                        <div class="c-work__summary">
-                          <h3 class="c-work__title">summary</h3>
-                          <div class="c-work__summary-text">
-                            <ul>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-time-icon icon fas fa-history"></i>
-                                Coming soon...
-                              </li>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-git-icon icon fab fa-github"></i>
-                                Coming soon...
-                              </li>
-                              <li class="c-work__summary-item">
-                                <i class="c-work__summary-blog-icon icon fas fa-blog"></i>
-                                Coming soon...
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-
+              <div class="c-work__wrap" data-aos="fade-up">
+                <div class="c-work__imgbox">
+                  <img class="c-work__img" src="dist/img/portfolio.png" alt="">
                 </div>
+                <a href="#js-modal-portfolio" class="js-modal c-work__hover-wrap text-center">
+                  <p class="c-work__hover-text">このサイトです</p>
+                </a>
+              </div>
+
+              <div class="c-work__wrap" data-aos="fade-up">
+                <div class="c-work__imgbox">
+                  <img class="c-work__img" src="dist/img/cafe-responsive.png" alt="cafe-responsive">
+                </div>
+                <a href="#js-modal-cafe" class="js-modal c-work__hover-wrap text-center">
+                  <p class="c-work__hover-text">レスポンシブ対応練習用サイト</p>
+                </a>
+              </div>
+
+              <div class="c-work__wrap" data-aos="fade-up">
+                <div class="c-work__imgbox">
+                  <img class="c-work__img" src="dist/img/errorspc.png" alt="errorspc">
+                </div>
+                <a href="#js-modal-errorspc" class="js-modal c-work__hover-wrap text-center">
+                  <p class="c-work__hover-text">オブジェクト指向練習用ゲーム</p>
+                </a>
+              </div>
+
+              <div class="c-work__wrap" data-aos="fade-up">
+                <div class="c-work__imgbox">
+                    <img class="c-work__img" src="dist/img/miina.png" alt="miina">
+                </div>
+                <a href="#js-modal-miina" class="js-modal c-work__hover-wrap text-center">
+                  <p class="c-work__hover-text">フルスクラッチ</p>
+                </a>
+              </div>
+
+              <div class="p-arrow__container old">
+                <p class="p-arrow old">
+                  Old
+                  <span class="p-arrow__span old"></span>
+                </p>
+              </div>
+
+            </div>
+
+      </section>
+
+      <!-- ********************** -->
+      <!-- modaaal works -->
+      <!-- ********************** -->
+
+      <!-- booksmap -->
+      <div id="js-modal-booksmap" style="display:none;">
+
+        <div class="c-work__modal-contents flex justify-content-center">
+          <h2>BooksMap</h2>
+            <div class="c-work__wrap-modal">
+              <a class="c-work__img-link">
+                <img class="c-work__img" src="dist/img/booksmap.png" alt="">
+              </a>
+            </div>
+
+            <div class="c-work__details-wrap">
+              <div class="c-work__btn-wrap">
+                <a class="c-work__content-link" href="https://booksmap.tomomi-s.xyz/public/home" target="_blank">作品ページへ</a>
+                <a class="c-work__content-link" href="https://github.com/tm1ss0do/booksmap" target="_blank">
+                  <i class="c-work__content-git-icon icon fab fa-github"></i>
+                  github
+                </a>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">詳細</h3>
+                <div class="c-work__content-text">
+                  <ul>
+                    <li class="c-work__content-item">
+                      使用言語など：FuelPHP/bootstrap/scss
+                    </li>
+                    <li class="c-work__content-item">
+                      制作期間：2019.1.20〜3.2
+                    </li>
+                    <li class="c-work__content-item">
+                      ブラウザテスト済：Mac safari/chrome windows Edge/IE11
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">概要</h3>
+                <div class="c-work__content-text">
+                  読んだ本の要約を投稿し合うサイトです。</br>
+                  iPhoneやiPadなどへレスポンシブ対応させ、
+                  ブラウザテストとエミューレーターテストを実施しました。</br>
+                  <p class="c-work__subtitle">工夫した点</p>
+                  読んでいる途中の本も気軽に投稿できるよう、読了と読書中の切り替えを設けました。</br>
+                  また、人の目を気にせず読書できるよう、「お気に入り」や「気になる」の数は排除しました。</br>
+                  代わりに投稿者の名前を掲載し、「よく見かける人」のような曖昧な繋がりや親近感が持てるようにしました。
+                  <p class="c-work__subtitle">改善したい点</p>
+                  <ul>
+                    <li>・AmazonAPIなどを使って画像登録とリンク指定を簡単にする</li>
+                    <li>・読んだ冊数などのグラフ化：読書量の見える化によりモチベーションアップを狙う</li>
+                    <li>・お気にいりユーザーの登録機能</li>
+                    etc...
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+      <!-- portfolio -->
+      <div id="js-modal-portfolio" style="display:none;">
+
+        <div class="c-work__modal-contents flex">
+          <h2>portfolio</h2>
+
+            <div class="c-work__wrap-modal">
+              <a class="c-work__img-link">
+                <img class="c-work__img" src="dist/img/portfolio.png" alt="">
+              </a>
+            </div>
+
+            <div class="c-work__details-wrap">
+              <div class="c-work__btn-wrap">
+                <a class="c-work__content-link" href="https://github.com/tm1ss0do/portfolio" target="_blank">
+                  <i class="c-work__content-git-icon icon fab fa-github"></i>
+                  github
+                </a>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">詳細</h3>
+                <div class="c-work__content-text">
+                  <ul>
+                    <li class="c-work__content-item">
+                      使用言語など：scss/FLOCSS/npm
+                    </li>
+                    <li class="c-work__content-item">
+                      制作期間：2019.12.20〜12.22(2020年3月更新)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">概要</h3>
+                <div class="c-work__content-text">
+                  ポートフォリオサイトです。</br>
+                  制作物・プロフィールなどを掲載しています。</br>
+                  <p class="c-work__subtitle">工夫した点</p>
+                  上部のタブでページを切り替えられるようにしました。</br>
+                  できるだけ少ない移動で全て閲覧でき、かつ必要な情報だけ素早く得られるようにするためです。
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
 
 
-              </section>
-              <!------------------------------->
-              <!--skill-->
-              <!------------------------------->
 
-              <section id="skill" class="p-skill-wrapper flex">
+      <!-- object指向 -->
+      <div id="js-modal-errorspc" style="display:none;">
 
-                <h1 class="c-title flex">
-                  <span class="c-title__text">SKILL</span>
-                </h1>
+        <div class="c-work__modal-contents flex">
+          <h2>ERROR PC</h2>
+            <div class="c-work__wrap-modal">
+              <a class="c-work__img-link">
+                <img class="c-work__img" src="dist/img/errorspc.png" alt="">
+              </a>
+            </div>
+            <div class="c-work__details-wrap">
+              <div class="c-work__btn-wrap">
+                <a class="c-work__content-link" href="https://errorspc.tomomi-s.xyz/" target="_blank">作品ページへ</a>
+                <a class="c-work__content-link" href="https://github.com/tm1ss0do/errorspc" target="_blank">
+                  <i class="c-work__content-git-icon icon fab fa-github"></i>
+                  github
+                </a>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">詳細</h3>
+                <div class="c-work__content-text">
+                  <ul>
+                    <li class="c-work__content-item">
+                      使用言語など：php/css/photoshop
+                    </li>
+                    <li class="c-work__content-item">
+                      制作期間：2019.10.15〜10.25
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">概要</h3>
+                <div class="c-work__content-text">
+                  PHPのオブジェクト指向の練習に作った簡単なゲームです。</br>
+                  <p class="c-work__subtitle">工夫した点</p>
+                  周囲にプログラミング学習者が多いので、楽しめるように共感できるような題材を選びました。
+                </div>
+              </div>
+            </div>
+        </div>
 
-                <div class="p-skill flex">
+      </div>
 
-                  <div class="c-skill flex">
 
-                    <div class="c-skill-wrap flex" data-aos="flip-up">
-                      <h2 class="c-skill-wrap__title">Front-end</h2>
-                      <div class="c-skill-wrap__skill">
-                        <i class="fab fa-wordpress"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-npm"></i>
-                      </br>
-                        HTML5/CSS3/jQuery/JavaScript/WordPress
-                      </div>
-                      <div class="c-skill-wrap__text">
-                        <ul>
-                          <li>FLOCSSでCSS設計</li>
-                          <li>レスポンシブ対応</li>
-                          <li>npm</li>
-                        </ul>
-                      </div>
-                      ect.
+      <!-- cafe -->
+      <div id="js-modal-cafe" style="display:none;">
+
+        <div class="c-work__modal-contents flex">
+          <h2>cafe</h2>
+
+            <div class="c-work__wrap-modal">
+              <a class="c-work__img-link">
+                <img class="c-work__img" src="dist/img/cafe-responsive.png" alt="">
+              </a>
+            </div>
+
+            <div class="c-work__details-wrap">
+              <div class="c-work__btn-wrap">
+                <a class="c-work__content-link" href="https://cafe-responsive.tomomi-s.xyz/" target="_blank">作品ページへ</a>
+                <a class="c-work__content-link" href="https://github.com/tm1ss0do/cafe-responsive" target="_blank">
+                  <i class="c-work__content-git-icon icon fab fa-github"></i>
+                  github
+                </a>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">詳細</h3>
+                <div class="c-work__content-text">
+                  <ul>
+                    <li class="c-work__content-item">
+                      使用言語など：scss/FLOCSS/npm
+                    </li>
+                    <li class="c-work__content-item">
+                      制作期間：2019.11.8〜11.17
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">概要</h3>
+                <div class="c-work__content-text">
+                  レスポンシブ対応練習サイトです。</br>
+                  架空のカフェをイメージして紹介ページを作っています。</br>
+                  <p class="c-work__subtitle">工夫した点</p>
+                  photoshopを使って画像加工に挑戦しています。
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+      <!-- miina -->
+      <div id="js-modal-miina" style="display:none;">
+
+        <div class="c-work__modal-contents flex">
+          <h2>miina</h2>
+
+            <div class="c-work__wrap-modal">
+              <a class="c-work__img-link">
+                <img class="c-work__img" src="dist/img/miina.png" alt="">
+              </a>
+            </div>
+            <div class="c-work__details-wrap">
+              <div class="c-work__btn-wrap">
+                <a class="c-work__content-link" href="https://miina.tomomi-s.xyz/" target="_blank">作品ページへ</a>
+                <a class="c-work__content-link" href="https://github.com/tm1ss0do/miina" target="_blank">
+                  <i class="c-work__content-git-icon icon fab fa-github"></i>
+                  github
+                </a>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">詳細</h3>
+                <div class="c-work__content-text">
+                  <ul>
+                    <li class="c-work__content-item">
+                      使用言語など：php/MySQL/Apache/XD
+                    </li>
+                    <li class="c-work__content-item">
+                      制作期間：2019.9.29〜10.9
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="c-work__content">
+                <h3 class="c-work__title">概要</h3>
+                <div class="c-work__content-text">
+                  フルスクラッチで作成した初めてのWebサービスです。</br>
+                  「minne」のようなフリマサービスをイメージして作成しました。</br>
+                  <p class="c-work__subtitle">フルスクラッチで作った理由</p>
+                  フレームワークで作成した時にエラーに対処できないと聞いたためです。</br>
+                  実際、FuelPHPでWebサービスを作成した時にフルスクラッチで作った経験が役に立ちました。
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+
+
+      <!------------------------------->
+      <!--skill-->
+      <!------------------------------->
+
+      <section id="skill" class="p-tab-content p-skill-wrapper js-tab-container">
+
+        <h1 class="c-title flex">
+          <span class="c-title__text">SKILL</span>
+        </h1>
+
+        <div class="c-skill-wrap flex" data-aos="fade-up">
+          <div class="c-skill-wrap__content">
+            <h2 class="c-skill-wrap__title">フロントエンド</h2>
+            <div class="c-skill-wrap__skill">
+              <div class="c-skill-wrap__skill-icons">
+                <img class="c-skill-wrap__skill-icon" src="dist/img/html-5.png" alt="">
+                <img class="c-skill-wrap__skill-icon" src="dist/img/css.png" alt="">
+                <img class="c-skill-wrap__skill-icon" src="dist/img/js.png" alt="">
+              </div>
+              <p>HTML5/CSS3/bootstrap/JavaScript/jQuery</p>
+            </div>
+            <div class="c-skill-wrap__skill">
+              <span class="font-color-sub">Can：</span>
+              <ul>
+                <li>FLOCSSを使ったCSS設計</li>
+                <li>レスポンシブ対応サイト</li>
+                <li>npmやyarnによるプラグインの導入</li>
+                <li>タスクランナーの作成・使用</li>
+              </ul>
+              など
+            </div>
+          </div>
+          <div class="c-skill-wrap__content" data-aos="fade-up">
+            <h2 class="c-skill-wrap__title">バックエンド</h2>
+            <div class="c-skill-wrap__skill">
+              <div class="c-skill-wrap__skill-icons">
+                <img class="c-skill-wrap__skill-icon" src="dist/img/php.png" alt="">
+                <img class="c-skill-wrap__skill-icon" src="dist/img/mysql.png" alt="">
+              </div>
+              <p>MySQL/PHP/FuelPHP</p>
+            </div>
+            <div class="c-skill-wrap__skill">
+              <span class="font-color-sub">Can：</span>
+              <ul>
+                <li>フルスクラッチでWebサービス開発</li>
+                <li>オブジェクト指向でゲーム制作</li>
+                <li>DB設計</li>
+              </ul>
+              など
+            </div>
+          </div>
+
+          <div class="c-skill-wrap__content" data-aos="fade-up">
+            <h2 class="c-skill-wrap__title">そのほか</h2>
+            <div class="c-skill-wrap__skill">
+              <div class="c-skill-wrap__skill-icons">
+                <img class="c-skill-wrap__skill-icon" src="dist/img/github.png" alt="">
+              </div>
+              <p>GitHub/Sourcetree/Photoshop/XD/Android Emulator/Xcode</p>
+            </div>
+            <div class="c-skill-wrap__skill">
+              <span class="font-color-sub">Can：</span>
+              <ul>
+                <li>githubへプッシュ</li>
+                <li>Android Emulator/Xcodeでエミュレーターテスト</li>
+                <li>Photoshopで画像加工</li>
+                <li>XDでサイトデザイン</li>
+              </ul>
+              など
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+
+    <!------------------------------->
+    <!--profile-->
+    <!------------------------------->
+    <section id="profile" class="p-tab-content js-tab-container">
+      <div class="c-content__wrapper">
+
+        <h1 class="c-title flex">
+          <span class="c-title__text">PROFILE</span>
+        </h1>
+
+        <div class="p-about flex justify-content-center">
+
+          <div class="flex-column site-width">
+
+            <div class="c-card__text text-center">
+
+              <h3 class="c-title__sub">基本情報</h3>
+
+              <ul class="p-prof-summary__list">
+                <li class="p-prof-summary__list-item">
+                  name:
+                  <span class="c-info__sub">SASAKI TOMOMI</span>
+
+                </li>
+                <li class="p-prof-summary__list-item">
+                  birth:
+                  <span class="c-info__sub">1992.11.25</span>
+                </li>
+                <li class="p-prof-summary__list-item">
+                  from:
+                  <span class="c-info__sub">島根県</span>
+                </li>
+                <li class="p-prof-summary__list-item">
+                  graduation:
+                  <span class="c-info__sub">教育大国語科</span>
+                </li>
+                <li class="p-prof-summary__list-item">
+                  work:
+                  <span class="c-info__sub">ウェブライター</span>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="c-card__text" data-aos="fade-up">
+
+              <h3 class="c-title__sub text-center">職歴</h3>
+
+                <div class="p-prof-detail__wrap p-previous-work">
+                  <h3 class="p-prof-detail__title">前職
+                    <span class="p-prof-detail__date">2016-2017年</span>
+                  </h3>
+                  <div class="p-prof-detail__texts flex">
+                    <div class="p-prof-detail__imgbox">
+                      <img class="p-prof-detail__img" src="dist/img/blue-worker.jpg" alt="blue-worker">
                     </div>
-
-                    <div class="c-skill-wrap" data-aos="flip-up">
-                      <h2 class="c-skill-wrap__title">Back-end</h2>
-                      <div class="c-skill-wrap__skill">
-                        <i class="fab fa-php"></i>
-                        </br>
-                        MySQL/PHP/FuelPHP
-                      </div>
-                      <div class="c-skill-wrap__text">
-                        <ul>
-                          <li>フルスタックでWebサービス開発</li>
-                          <li>オブジェクト指向</li>
-                          <li>DB設計</li>
-                        </ul>
-                      </div>
-                      ect.
+                    <div class="p-prof-detail__text">
+                      <h4 class="c-info__sub">仕事内容：</h4>
+                      設備業の会社の営業技術職。</br>
+                      新築現場の設備工事補助業務・法人営業</br>
+                      <h4 class="c-info__sub">退職理由：</h4>
+                      資格を取得したことで歴史建造物の点検も担当。</br>
+                      苦手な虫の多い天井裏・軒下などで長期間作業したことによる適応障害（現在は完治）</br>
+                      <h4 class="c-info__sub">取得資格：</h4>
+                      消防設備士甲種4類（2018年失行済み）
                     </div>
-
-                    <div class="c-skill-wrap" data-aos="flip-up">
-                      <h2 class="c-skill-wrap__title">Others</h2>
-                      <div class="c-skill-wrap__skill">
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-sourcetree"></i>
-                        </br>
-                        Git/GitHub/Sourcetree/Photoshop/XD
-                      </div>
-                      <div class="c-skill-wrap__text">
-                        <ul>
-                          <li>Photoshopで画像加工</li>
-                          <li>XDでサイトデザイン</li>
-                        </ul>
-                      </div>
-                      ect.
-                    </div>
-
                   </div>
-
                 </div>
 
-              </section>
-              <!------------------------------->
-              <!--contact-->
-              <!------------------------------->
-              <section id="contact" class="p-contact-wrapper flex">
-                <h1 class="c-title flex">
-                  <span class="c-title__text">CONTACT</span>
-                </h1>
-                <div class="p-contact flex">
-                  <!-- <h2 class="p-contact__title">メンテナンス中</h2> -->
-                  <h2>
-                  <a class="p-contact__twitterlink" href="https://mobile.twitter.com/tomomi_dwyl">
-                    <i class="p-contact__twitter-icon fab fa-twitter"></i>
-                  </a>
-                  </h2>
-                  <p>twitterにてお声がけ頂けると喜びます。</p>
+
+                <div class="p-prof-detail__wrap">
+                  <h3 class="p-prof-detail__title p-prof-detail__title-right">現職
+                    <span class="p-prof-detail__date">2017-現在</span>
+                  </h3>
+                  <div class="p-prof-detail__texts flex">
+                    <div class="p-prof-detail__imgbox-mobile">
+                      <img class="p-prof-detail__img" src="dist/img/writer-pic.jpg" alt="blue-worker">
+                    </div>
+                    <div class="p-prof-detail__text">
+                      <h4 class="c-info__sub">仕事内容：</h4>
+                      ライター業。</br>
+                      大手家電メーカーの製品紹介メディアで、オーディオ機器を中心に幅広く記事を担当。</br>
+                      <h4 class="c-info__sub">経緯：</h4>
+                      元々文章を書くのが好きだったため転職期間中にアルバイト感覚でクラウドワークスにてライター業務を請け負う。</br>
+                      半年後に開業。大手家電メディアで9万PV以上の記事を多数作成中。</br>
+                    </div>
+                    <div class="p-prof-detail__imgbox mobile-none">
+                      <img class="p-prof-detail__img" src="dist/img/writer-pic.jpg" alt="blue-worker">
+                    </div>
+                  </div>
                 </div>
-              </section>
+
+
+                <div class="p-prof-detail__wrap previous-work">
+                  <h3 class="p-prof-detail__title">これから
+                    <span class="p-prof-detail__date">2019-未来</span>
+                  </h3>
+                  <div class="p-prof-detail__texts flex">
+                    <div class="p-prof-detail__imgbox">
+                      <img class="p-prof-detail__img" src="dist/img/catEngineer.jpg" alt="blue-worker">
+                    </div>
+                    <div class="p-prof-detail__text">
+                      <h4 class="c-info__sub">プログラミング</h4>
+                      2019年4月から1日平均2.5時間プログラミング学習中。</br>
+                      フロントもバックも扱えるエンジニアを目指す。</br>
+                      <h4 class="c-info__sub">学ぶきっかけ・理由</h4>
+                      ・ワードプレスへ入稿する際、HTMLの知識が必要とされたため</br>
+                      ・幼い頃から緻密に計算されたモノに惹かれるため</br>
+                      ・人の書いた文章を読むのが好き</br>
+                      ・ゲーム「Detroit: Become Human」による影響</br>
+                      <h4 class="c-info__sub">夢</h4>
+                      30年後にアンドロイドと暮らすこと。
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="c-card__text" data-aos="zoom-in">
+
+              <h3 class="c-title__sub text-center">長所・短所・趣味</h3>
+              <div class="p-prof-detail__wrap previous-work">
+                <h3 class="p-prof-detail__title p-prof-detail__title-right">長所と短所
+                </h3>
+                <div class="p-prof-detail__texts flex">
+                  <div class="p-prof-detail__imgbox-mobile">
+                    <img class="p-prof-detail__img" src="dist/img/booknharinezumi.jpg" alt="blue-worker">
+                  </div>
+                  <div class="p-prof-detail__text">
+                    <h4 class="c-info__sub">長所：挑戦と継続</h4>
+                    気になることはとにかく試す性格。</br>
+                    プログラミングの勉強を初めてみたり、DIYで壁を塗ってみたり、
+                    旅に出てみたりとさまざまなことに挑戦。</br>
+                    <a href="#works">アウトプットの作成</a>など、何らかの結果が出るまで行動する。
+                    <h4 class="c-info__sub">短所：初動の遅さ</h4>
+                    慎重な性格。</br>
+                    何度も同じ箇所を確認したり、全体を見渡す前に目の前のことを終わらせようとする。</br>
+                    改善のために心理学を勉強中。認知行動療法などを実践。
+                  </div>
+                  <div class="p-prof-detail__imgbox mobile-none">
+                    <img class="p-prof-detail__img" src="dist/img/booknharinezumi.jpg" alt="blue-worker">
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-prof-detail__wrap previous-work">
+                <h3 class="p-prof-detail__title">趣味
+                </h3>
+                <div class="p-prof-detail__texts flex">
+                  <div class="p-prof-detail__imgbox">
+                    <img class="p-prof-detail__img" src="dist/img/cycling.jpg" alt="blue-worker">
+                  </div>
+                  <div class="p-prof-detail__text">
+                    サイクリング・DIY・ドラム・旅・映画・読書・漫画・アニメ・ゲーム実況・ボードゲーム・声優など</br>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
 
     </main>
     <!------------------------------->
     <!--footer-->
     <!------------------------------->
     <footer id="footer">
-      Copyright © 2019 Tomomi Sasaki .All Rights Reserved.
+      Copyright © <?php echo date('Y'); ?> Tomomi Sasaki .All Rights Reserved.
     </footer>
-    <script type="text/javascript" src="dist/js/build.js"></script>
+
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="modaal.min.js"></script>
+    <script type="text/javascript" src="dist/js/build.js"></script>
   </body>
 </html>

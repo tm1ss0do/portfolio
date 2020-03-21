@@ -15,3 +15,10 @@
     opacity: 0;
   }
 }
+
+.is-show{
+  display: block;
+}
+.is-active{
+  background: $c-main;
+}
