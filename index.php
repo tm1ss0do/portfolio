@@ -546,28 +546,6 @@
 
               <h3 class="c-title__sub text-center">職歴</h3>
 
-                <div class="p-prof-detail__wrap p-previous-work">
-                  <h3 class="p-prof-detail__title">前職
-                    <span class="p-prof-detail__date">2016-2017年</span>
-                  </h3>
-                  <div class="p-prof-detail__texts flex">
-                    <div class="p-prof-detail__imgbox">
-                      <img class="p-prof-detail__img" src="dist/img/blue-worker.jpg" alt="blue-worker">
-                    </div>
-                    <div class="p-prof-detail__text">
-                      <h4 class="c-info__sub">仕事内容：</h4>
-                      設備業の会社の営業技術職。</br>
-                      新築現場の設備工事補助業務・法人営業</br>
-                      <h4 class="c-info__sub">退職理由：</h4>
-                      資格を取得したことで歴史建造物の点検も担当。</br>
-                      苦手な虫の多い天井裏・軒下などで長期間作業したことによる適応障害（現在は完治）</br>
-                      <h4 class="c-info__sub">取得資格：</h4>
-                      消防設備士甲種4類（2018年失行済み）
-                    </div>
-                  </div>
-                </div>
-
-
                 <div class="p-prof-detail__wrap">
                   <h3 class="p-prof-detail__title p-prof-detail__title-right">現職
                     <span class="p-prof-detail__date">2017-現在</span>
@@ -590,6 +568,26 @@
                   </div>
                 </div>
 
+                <div class="p-prof-detail__wrap p-previous-work">
+                  <h3 class="p-prof-detail__title">前職
+                    <span class="p-prof-detail__date">2016-2017年</span>
+                  </h3>
+                  <div class="p-prof-detail__texts flex">
+                    <div class="p-prof-detail__imgbox">
+                      <img class="p-prof-detail__img" src="dist/img/blue-worker.jpg" alt="blue-worker">
+                    </div>
+                    <div class="p-prof-detail__text">
+                      <h4 class="c-info__sub">仕事内容：</h4>
+                      2016年新卒で設備業の会社の営業技術職へ採用。</br>
+                      新築現場の設備工事補助業務・法人営業を担当。</br>
+                      <h4 class="c-info__sub">退職理由：</h4>
+                      資格を取得したことで歴史建造物の点検も担当。</br>
+                      自己都合により退職。</br>
+                      <h4 class="c-info__sub">取得資格：</h4>
+                      消防設備士甲種4類（2018年失行済み）
+                    </div>
+                  </div>
+                </div>
 
                 <div class="p-prof-detail__wrap previous-work">
                   <h3 class="p-prof-detail__title">これから
@@ -632,10 +630,10 @@
                     プログラミングの勉強を初めてみたり、DIYで壁を塗ってみたり、
                     旅に出てみたりとさまざまなことに挑戦。</br>
                     <a href="#works">アウトプットの作成</a>など、何らかの結果が出るまで行動する。
-                    <h4 class="c-info__sub">短所：初動の遅さ</h4>
+                    <h4 class="c-info__sub">短所：考えすぎる所</h4>
                     慎重な性格。</br>
                     何度も同じ箇所を確認したり、全体を見渡す前に目の前のことを終わらせようとする。</br>
-                    改善のために心理学を勉強中。認知行動療法などを実践。
+                    改善のために心理学を勉強中。行動力を生かして認知行動療法などを実践。
                   </div>
                   <div class="p-prof-detail__imgbox mobile-none">
                     <img class="p-prof-detail__img" src="dist/img/booknharinezumi.jpg" alt="blue-worker">
@@ -652,7 +650,6 @@
                   </div>
                   <div class="p-prof-detail__text">
                     サイクリング・DIY・ドラム・旅・映画・読書・漫画・アニメ・ゲーム実況・ボードゲーム・声優など</br>
-
                   </div>
                 </div>
               </div>
