@@ -22,8 +22,8 @@
    &::after{
      @extend .c-title::before;
    }
-   &__sub{
-     font-size: $font-xl;
-     margin-bottom: $span-m;
+   &__header-logo{
+     font-size: $font-xxl;
+     color: $c-back-main;
    }
  }

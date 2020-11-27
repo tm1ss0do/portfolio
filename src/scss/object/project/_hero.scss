@@ -1,0 +1,16 @@
+.p-hero{
+  &__container{
+    width: 100%;
+  }
+  &__wrap{
+    background-image: url(../img/shimane-sora.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

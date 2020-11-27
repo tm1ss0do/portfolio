@@ -75,6 +75,7 @@ $c-blog: #fff7b3;
  }
 }
 
+
 // ==========================================================================
 // Foundation
 // ==========================================================================
@@ -115,7 +116,8 @@ $c-blog: #fff7b3;
 @import "object/project/_prof-detail";
 @import "object/project/_prof-summary";
 @import "object/project/_skill";
-@import "object/project/_tab-content";
+@import "object/project/_section-content";
+@import "object/project/_hero";
 
 // -----------------------------------------------------------------
 // Utility

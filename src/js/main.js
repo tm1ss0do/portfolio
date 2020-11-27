@@ -1,22 +1,4 @@
-
-
-//>>>>ヘッダー部分のカラー変更>>>>>>
-// ヘッダーの高さを取得
-// topからのスクロール量がヘッダーの高さを超えたらカラー変更
-//<<<<<<<<<<<<<<<<<<
 $(function(){
-
-  //-----------------------------
-  //タブクリックで表示
-  //-----------------------------
-
-  $('.js-tab').click(function(){
-		$('.is-active').removeClass('is-active');
-		$(this).closest('.p-header__menu-item').addClass('is-active');
-		$('.is-show').removeClass('is-show');
-		const tabs = $(this).data().tab;
-    $('#'+tabs).addClass('is-show');
-	});
 
   //-----------------------------
   //ハンバーガーメニュー表示
@@ -32,7 +14,6 @@ $(function(){
     $(this).closest('.js-hum-menu').siblings('.js-show-btn').toggleClass('js-hide-btn');
     $(this).closest('.js-hum-menu').toggleClass('js-show-hum');
   });
-
 
   //-----------------------------
   //AOS発火

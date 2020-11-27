@@ -6,41 +6,23 @@
 }
 
 .c-skill-wrap{
-  justify-content: center;
-  text-align: center;
-  margin-bottom: $span-ll;
   @include iphone6{
     width: 100%;
     flex-direction: column;
   }
   &__content{
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box;
-    align-items: center;
     @include iphone6{
       width: 100%;
     }
   }
   &__title{
-    position: relative;
     margin: 1.5em 0;
     padding: $span-ss;
     color: #555;
     background: $c-main-opa;
     border-radius: 4px;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -15px;
-      border: 15px solid transparent;
-      border-top: 15px solid $c-main-opa;
-    }
   }
   &__skill{
-    border-top: 1px solid black;
     box-sizing: border-box;
     padding: $span-ss;
   }
@@ -53,5 +35,8 @@
     width: 20%;
     margin: $span-ss;
     display: block;
+  }
+  &__list-item{
+    list-style: inside;
   }
 }
